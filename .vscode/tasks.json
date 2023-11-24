@@ -1,0 +1,60 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "typst: compile main",
+            "type": "shell",
+            "command": "typst compile src/main.typ out/main.pdf",
+            "windows": {
+                "command": "typst compile src/main.typ out/main.pdf"
+            },
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            }
+        },
+        {
+            "label": "typst: watch main",
+            "type": "shell",
+            "command": "typst watch src/main.typ out/main.pdf",
+            "windows": {
+                "command": "typst watch src/main.typ out/main.pdf"
+            },
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            }
+        },
+        {
+            "label": "typst: compile projektbeskrivelse",
+            "type": "shell",
+            "command": "typst compile src/Projektbeskrivelse.typ out/Projektbeskrivelse.pdf",
+            "windows": {
+                "command": "typst compile src/Projektbeskrivelse.typ out/Projektbeskrivelse.pdf"
+            },
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            }  
+        },
+        
+
+    ]
+}
