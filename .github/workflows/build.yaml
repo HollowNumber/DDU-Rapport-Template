@@ -21,7 +21,7 @@ jobs:
       - uses: yusancky/setup-typst@v2
         id: setup-typst
         with:
-          version: 'v0.9.0'
+          version: 'v0.11.0'
       - name: Make file executable
         run: chmod +x scripts/build  # Add this step
       - run: |
